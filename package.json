@@ -1,0 +1,39 @@
+{
+  "name": "java.text.simple-date-format",
+  "version": "0.0.0",
+  "description": "A utility class to format Date object in Javascript. It is heavily influenced by SimpleDateFormat class of Java and follow most of its specifications.",
+  "main": "dist/simple-date-format.js",
+  "browser": "dist/simple-date-format.js",
+  "module": "dist/simple-date-format.mjs",
+  "jsnext:main": "index.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/linsk1998/simple-date-format.git"
+  },
+  "keywords": [
+    "java",
+    "date",
+    "format",
+    "time",
+    "simple"
+  ],
+  "author": "linsk",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/linsk1998/simple-date-format/issues"
+  },
+  "homepage": "https://github.com/linsk1998/simple-date-format#readme",
+  "dependencies": {
+    "sky-core": "^0.1.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "mocha": "^8.3.2",
+    "rollup": "^2.45.2",
+    "rollup-plugin-import": "^1.0.1"
+  }
+}
