@@ -23,7 +23,7 @@ SimpleDateFormat.prototype.format=function(date){
 SimpleDateFormat.prototype.parse=function(dateString){
 	var reg1=/(yyyy|yy|MM|M|dd|d|HH|H|hh|h|mm|m|ss|s|aaa|a|SSS)/g;
 	var keys=this.pattern.match(reg1);
-	var date=new Date();
+	var date=new Date(0);
 	if(!keys){
 		return date;
 	}
