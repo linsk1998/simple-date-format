@@ -1,7 +1,7 @@
-import node from "@rollup/plugin-node-resolve";
-import importResolve from "rollup-plugin-import";
-export default {
-	input:"index.js",
+const nodeResolve = require("@rollup/plugin-node-resolve");
+
+module.exports = {
+	input:"src/SimpleDateFormat.js",
 	output:[{
 		file:"dist/simple-date-format.js",
 		interop: "esModule",
@@ -20,10 +20,6 @@ export default {
 		format:"esm"
 	}],
 	plugins:[
-		node(),
-		importResolve({
-			libraryName:"sky-core",
-			libraryDirectory:"utils"
-		})
+		nodeResolve()
 	]
-}
+};
